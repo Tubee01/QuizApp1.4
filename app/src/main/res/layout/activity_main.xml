@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
-
-
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,18 +15,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/q1"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            />
 
         <EditText
             android:id="@+id/editText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Name"
+            android:hint="@string/name"
             android:inputType="textCapWords"
             />
 
         <TextView
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/q2"
@@ -44,7 +40,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             >
-
 
             <RadioButton
                 android:id="@+id/the1817_radioButton"
@@ -74,7 +69,6 @@
                 />
         </RadioGroup>
         <TextView
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/q3"
@@ -93,14 +87,12 @@
                 android:layout_height="wrap_content"
                 android:text="@string/_5_3_million"
                 />
-
             <RadioButton
                 android:id="@+id/the15_radioButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/_15_million"
                 />
-
             <RadioButton
                 android:id="@+id/the10_radioButton"
                 android:layout_width="wrap_content"
@@ -125,21 +117,20 @@
             xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/radioGroup3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
+            android:layout_height="wrap_content"
+            >
             <RadioButton
                 android:id="@+id/ukraine_radioButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ukraine"
                 />
-
             <RadioButton
                 android:id="@+id/bosnnia_radioButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/bosnia" />
-
+                android:text="@string/bosnia"
+                />
             <RadioButton
                 android:id="@+id/croatia_radiobutton"
                 android:layout_width="wrap_content"
@@ -164,20 +155,20 @@
             xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            >
             <RadioButton
                 android:id="@+id/f_U_radioButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/finno_ugric" />
-
+                android:text="@string/finno_ugric"
+                />
             <RadioButton
                 android:id="@+id/slavonic_radioButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/slavonic"
                 />
-
             <RadioButton
                 android:id="@+id/germanic_radioButton"
                 android:layout_width="wrap_content"
@@ -202,20 +193,20 @@
             xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            >
             <RadioButton
                 android:id="@+id/the1699_1918_radioButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/_1699_1918" />
-
+                android:text="@string/_1699_1918"
+                />
             <RadioButton
                 android:id="@+id/the1537_1919_radioButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/_1537_1919"
                 />
-
             <RadioButton
                 android:id="@+id/the1602_1944_radioButton3"
                 android:layout_width="wrap_content"
@@ -245,15 +236,14 @@
                 android:id="@+id/the1956_radioButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/_1956" />
-
+                android:text="@string/_1956"
+                />
             <RadioButton
                 android:id="@+id/the1968_radioButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/_1968"
                 />
-
             <RadioButton
                 android:id="@+id/the1953_radioButton"
                 android:layout_width="wrap_content"
@@ -265,7 +255,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/_1969"
-
                 />
         </RadioGroup>
         <TextView
@@ -314,8 +303,5 @@
             android:text="@string/reset"
             android:onClick="resetAnswers"
             />
-
-
-
     </LinearLayout>
 </ScrollView>
