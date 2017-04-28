@@ -38,4 +38,5 @@
     <string name="joseph_needham">Joseph Needham</string>
     <string name="submit_answers">Submit Answers</string>
     <string name="reset">Reset</string>
+    <string name="name">Name</string>
 </resources>
