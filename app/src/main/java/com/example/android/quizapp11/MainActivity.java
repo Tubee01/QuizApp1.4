@@ -11,7 +11,6 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -29,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         EditText checkAnswer = (EditText) findViewById(R.id.editText);
         String answerText = checkAnswer.getText().toString().trim();
-        if (answerText.equals("Danube")){
+        if (answerText.equalsIgnoreCase("Danube")){
             points += 1;
         }
         //Checking question 2 and  rewarding it
@@ -54,11 +53,7 @@ public class MainActivity extends AppCompatActivity {
         if (checkedThree) {
             points += 1;
         }
-
-
         //Checking question 5 and rewarding it
-
-
         RadioButton radioButton4 = (RadioButton) findViewById(R.id.f_U_radioButton);
         boolean checkedFour = radioButton4.isChecked();
         if (checkedFour) {
@@ -82,22 +77,25 @@ public class MainActivity extends AppCompatActivity {
         boolean checked8 = checkBox2.isChecked();
         CheckBox checkBox3 = (CheckBox) findViewById(R.id.puskásCheckbox);
         boolean checked9 = checkBox3.isChecked();
+        CheckBox checkBox4 = (CheckBox) findViewById(R.id.needhamCheckbox);
+        boolean checked10 = checkBox4.isChecked();
 
-        if (checked7)
-            points+=1;
-        if (checked8)
-            points++;
-        if (checked9)
-            points++;
-
+        if(checked7 && checked8 && checked9 && !checked10){
+            points +=3;
+        }
 
         //Prevents the Submit method from being pressed more than once
         Button submitAnswer = (Button) findViewById(R.id.submitAnswerButton);
         submitAnswer.setClickable(false);
         //Show a toast with the score
 
-        {
+        {if (points>=5){
             Toast.makeText(this, "You got " + points + "/10 points!", Toast.LENGTH_LONG).show();
+
+        }else{
+            Toast.makeText(this, "You can do better! " + points + "/10 points :/", Toast.LENGTH_LONG).show();
+
+        }
 
         }
     }
@@ -129,5 +127,3 @@ public class MainActivity extends AppCompatActivity {
         submitAnswer.setClickable(true);
     }
 }
-
-
